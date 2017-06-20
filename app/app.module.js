@@ -1,4 +1,6 @@
 "use strict";
+// Класс AppModule - точка входа в данное приложение 
+// Angular модуль - класс с декоратором NgModule
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8,7 +10,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
-var app_components_1 = require("./app.components");
+var app_component_1 = require("./app.component");
+// @NgModule - декоратор, который определяет данные для создаваемого модуля.
+// Для того чтобы приложение могло выполняться в браузере, текущий модуль (корневой модуль)
+// должен выполнить импорт модуля BrowserModule взятого из @angular/platform-browser 
+// Задача BrowserModule зарегистрировать основные сервис провайдеры приложения, 
+// а также добавить общие директивы такие как ngIf и ngFor
 var AppModule = (function () {
     function AppModule() {
     }
@@ -17,8 +24,8 @@ var AppModule = (function () {
 AppModule = __decorate([
     core_1.NgModule({
         imports: [platform_browser_1.BrowserModule],
-        declarations: [app_components_1.AppComponent],
-        bootstrap: [app_components_1.AppComponent]
+        declarations: [app_component_1.AppComponent],
+        bootstrap: [app_component_1.AppComponent] // компонент с которого начинается отображение приложения
     })
 ], AppModule);
 exports.AppModule = AppModule;
