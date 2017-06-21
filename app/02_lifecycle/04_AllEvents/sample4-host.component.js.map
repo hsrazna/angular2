@@ -1,0 +1,1 @@
+{"version":3,"file":"sample4-host.component.js","sourceRoot":"","sources":["sample4-host.component.ts"],"names":[],"mappings":";;;;;;;;AAAA,sCAA0C;AAO1C,IAAa,oBAAoB;IAAjC;IAAoC,CAAC;IAAD,2BAAC;AAAD,CAAC,AAArC,IAAqC;AAAxB,oBAAoB;IALhC,gBAAS,CAAC;QACP,QAAQ,EAAE,MAAM,CAAC,EAAE;QACnB,QAAQ,EAAE,cAAc;QACxB,WAAW,EAAE,6BAA6B;KAC7C,CAAC;GACW,oBAAoB,CAAI;AAAxB,oDAAoB"}

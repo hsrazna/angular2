@@ -1,0 +1,1 @@
+{"version":3,"file":"name-card-host.component.js","sourceRoot":"","sources":["name-card-host.component.ts"],"names":[],"mappings":";;;;;;;;AAAA,sCAA0C;AAO1C,IAAa,qBAAqB;IAAlC;IAAoC,CAAC;IAAD,4BAAC;AAAD,CAAC,AAArC,IAAqC;AAAxB,qBAAqB;IALjC,gBAAS,CAAC;QACP,QAAQ,EAAE,MAAM,CAAC,EAAE;QACnB,QAAQ,EAAE,eAAe;QACzB,WAAW,EAAE,+BAA+B;KAC/C,CAAC;GACW,qBAAqB,CAAG;AAAxB,sDAAqB"}
