@@ -5,24 +5,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 // Для использования относительных путей, необходимо добавить свойство moduleId и установить значение для свойства module.id
 // Данное свойство необходимо устанавливать в случае если в проекте используется загрузчик systemJS
 var List2Component = (function () {
     function List2Component() {
-        this.i = 0;
-        if (localStorage.getItem("i")) {
-            this.i = Number(localStorage.getItem("i"));
-        }
     }
-    List2Component.prototype.foo = function () {
-        this.i++;
-        localStorage.setItem("i", String(this.i));
-    };
     return List2Component;
 }());
 List2Component = __decorate([
@@ -31,8 +20,7 @@ List2Component = __decorate([
         selector: "list-2",
         templateUrl: "list2.component.html",
         styleUrls: ["list2.component.css"]
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], List2Component);
 exports.List2Component = List2Component;
 //# sourceMappingURL=list2.component.js.map

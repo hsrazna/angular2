@@ -9,14 +9,5 @@ import { Component } from "@angular/core";
     styleUrls: ["list2.component.css"]
 })
 export class List2Component {
-    i: number = 0,
-    foo(){
-    	this.i++;
-    	localStorage.setItem("i", String(this.i));
-    }
-    constructor(){
-    	if(localStorage.getItem("i")){
-    		this.i = Number(localStorage.getItem("i"));
-    	}
-    }
+    
 }

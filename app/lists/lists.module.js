@@ -7,17 +7,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var List1Component = (function () {
-    function List1Component() {
+var common_1 = require("@angular/common");
+var index_1 = require("./index");
+var ListsModule = (function () {
+    function ListsModule() {
     }
-    return List1Component;
+    return ListsModule;
 }());
-List1Component = __decorate([
-    core_1.Component({
-        selector: "list-1",
-        templateUrl: "app/list1/list1.component.html",
-        styleUrls: ["app/list1/list1.component.css"]
+ListsModule = __decorate([
+    core_1.NgModule({
+        imports: [common_1.CommonModule],
+        declarations: [index_1.List1Component, index_1.List2Component],
+        exports: [index_1.List1Component, index_1.List2Component]
     })
-], List1Component);
-exports.List1Component = List1Component;
-//# sourceMappingURL=list1.component.js.map
+], ListsModule);
+exports.ListsModule = ListsModule;
+//# sourceMappingURL=lists.module.js.map
