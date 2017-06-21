@@ -8,8 +8,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
+var router_1 = require("@angular/router"); // модуль для маршрутизации
 var app_component_1 = require("./app.component");
-var hello_world_list_component_1 = require("./hello-world-list/hello-world-list.component");
+var list1_component_1 = require("./list1/list1.component");
+var list2_component_1 = require("./list2/list2.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -17,8 +19,15 @@ var AppModule = (function () {
 }());
 AppModule = __decorate([
     core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule],
-        declarations: [app_component_1.AppComponent, hello_world_list_component_1.HelloWorldListComponent],
+        imports: [
+            platform_browser_1.BrowserModule,
+            router_1.RouterModule.forRoot([
+                { path: "list1", component: list1_component_1.List1Component },
+                { path: "list2", component: list2_component_1.List2Component },
+                { path: "", redirectTo: "list1", pathMatch: "full" }
+            ])
+        ],
+        declarations: [app_component_1.AppComponent, list1_component_1.List1Component, list2_component_1.List2Component],
         bootstrap: [app_component_1.AppComponent]
     })
 ], AppModule);
